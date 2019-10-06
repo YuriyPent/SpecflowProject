@@ -119,6 +119,22 @@ this.ScenarioSetup(scenarioInfo);
 #line hidden
             this.ScenarioCleanup();
         }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Create a new employee with mandatory details for different operations")]
+        [NUnit.Framework.TestCaseAttribute("Karthik", "28", "925631", null)]
+        [NUnit.Framework.TestCaseAttribute("John", "26", "12346", null)]
+        [NUnit.Framework.TestCaseAttribute("Sam", "32", "62541", null)]
+        public virtual void CreateANewEmployeeWithMandatoryDetailsForDifferentOperations(string name, string age, string phone, string[] exampleTags)
+        {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Create a new employee with mandatory details for different operations", exampleTags);
+#line 24
+this.ScenarioSetup(scenarioInfo);
+#line 27
+ testRunner.When(string.Format("I fill all the mandatory details in form {0}, {1} and {2}", name, age, phone), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+            this.ScenarioCleanup();
+        }
     }
 }
 #pragma warning restore

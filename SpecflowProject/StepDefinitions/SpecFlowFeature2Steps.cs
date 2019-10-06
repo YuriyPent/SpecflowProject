@@ -48,5 +48,14 @@ namespace SpecflowProject.StepDefinitions
 
         }
 
+        [When(@"I fill all the mandatory details in form (.*), (.*) and (.*)")]
+        public void WhenIFillAllTheMandatoryDetailsInFormKarthikAnd(string Name, int Age, int Phone)
+        {
+            Console.WriteLine($"Name {Name}");
+            Console.WriteLine($"Age {Age}");
+            Console.WriteLine($"Phone {Phone}");
+        }
+
+
     }
 }
