@@ -1,1 +1,2 @@
-﻿# Automate application with Specflow and Selenium C#
+﻿* Add file .features
+* Right click - Generate step definitions
