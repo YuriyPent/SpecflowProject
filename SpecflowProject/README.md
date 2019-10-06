@@ -1,0 +1,1 @@
+﻿# Automate application with Specflow and Selenium C#
