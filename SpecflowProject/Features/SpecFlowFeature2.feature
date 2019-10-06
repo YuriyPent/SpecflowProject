@@ -9,3 +9,14 @@ Scenario: Add two numbers
 	And I have entered 70 into the calculator
 	When I press add
 	Then the result should be 120 on the screen
+
+Scenario: Create a new employee with mandatory details
+	#Given I have opened my application
+	#Then I should see employee details page
+	When I fill all the mandatory details in form
+	| Name    | Age | Phone  | Email            |
+	| Karthik | 28  | 925631 | Karthik@exec.com |
+	| John | 26  | 12346 | John@exec.com |
+	| Sam | 32  | 62541 | Sam@exec.com |
+	#And I click the save button
+	#Then I should see all the details saved in my application and DB

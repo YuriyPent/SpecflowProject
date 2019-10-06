@@ -1,5 +1,6 @@
 ﻿using System;
 using TechTalk.SpecFlow;
+using TechTalk.SpecFlow.Assist;
 
 namespace SpecflowProject.StepDefinitions
 {
@@ -31,5 +32,21 @@ namespace SpecflowProject.StepDefinitions
                 throw new Exception("The value is different");
             }
         }
+        [When(@"I fill all the mandatory details in form")]
+        public void WhenIFillAllTheMandatoryDetailsInForm(Table table)
+        {
+           var details = table.CreateSet<EmployeeDetails>();
+           foreach (var emp in details)
+           {
+               Console.WriteLine($"The detail of employee: {emp.Name}");
+               Console.WriteLine("*************************************");
+               Console.WriteLine(emp.Age);
+               Console.WriteLine(emp.Email);
+               Console.WriteLine(emp.Name);
+               Console.WriteLine(emp.Phone);
+            }
+
+        }
+
     }
 }

@@ -227,6 +227,7 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StepDefinitions\EmployeeDetails.cs" />
     <Compile Include="StepDefinitions\SpecFlowFeature2Steps.cs" />
   </ItemGroup>
   <ItemGroup>
